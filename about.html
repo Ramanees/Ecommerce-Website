@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Ramanees Ecommerce Website</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="logo.png" class="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <li id="lg-login">
+                    <a href="#" id="login-icon"><i class="far fa-user"></i></a>
+                    <a href="#" id="logout-icon" style="display: none;"><i class="fas fa-sign-out-alt"></i></a>
+                </li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <a href="#" id="mobile-login-icon"><i class="far fa-user"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <!-- Login Popup -->
+    <div id="login-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup">×</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="normal">Login</button>
+            </form>
+            <p id="login-error" style="color: red; display: none; text-align: center; margin-top: 10px;">Invalid username or password.</p>
+        </div>
+    </div>
+
+    <section id="about" class="section-p1">
+        <h2>About Us</h2>
+        <p>Welcome to Dressify, your one-stop shop for stylish and affordable fashion!</p>
+        <div class="about-content">
+            <img src="img/products/f1.jpg" alt="About Us Image" style="width: 40%; border-radius: 10px; margin-right: 20px;">
+            <div class="about-text">
+                <h4>Our Mission</h4>
+                <p>At Dressify, we believe fashion should be accessible to everyone. We’re dedicated to bringing you high-quality T-shirts and apparel at unbeatable prices, with designs that reflect the latest trends and your unique style.</p>
+                <h4>Why Choose Us?</h4>
+                <p>From free shipping to 24/7 support, we’re here to make your shopping experience seamless. Our curated collections, like the Cartoon Astronaut T-Shirts, are designed to keep you ahead of the fashion curve.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img src="logo.png" class="logo">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong> 562 Wellington Road, Street 32, San Francisco</p>
+            <p><strong>Phone:</strong> +91 8139213256</p>
+            <p><strong>Hours: </strong> 9:00 am - 9:00 pm, Mon-Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#about.html">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

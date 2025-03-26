@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product - Ramanees Ecommerce Website</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="logo.png" class="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <li id="lg-login">
+                    <a href="#" id="login-icon"><i class="far fa-user"></i></a>
+                    <a href="#" id="logout-icon" style="display: none;"><i class="fas fa-sign-out-alt"></i></a>
+                </li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <a href="#" id="mobile-login-icon"><i class="far fa-user"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <!-- Login Popup -->
+    <div id="login-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup">×</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="normal">Login</button>
+            </form>
+            <p id="login-error" style="color: red; display: none; text-align: center; margin-top: 10px;">Invalid username or password.</p>
+        </div>
+    </div>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="img/products/f1.jpg" width="100%" id="MainImg" alt="">
+            <div class="small-img-group">
+                <div class="small-img-col"><img src="img/products/f1.jpg" width="100%" class="small-img"></div>
+                <div class="small-img-col"><img src="img/products/f2.jpg" width="100%" class="small-img"></div>
+                <div class="small-img-col"><img src="img/products/f3.jpg" width="100%" class="small-img"></div>
+                <div class="small-img-col"><img src="img/products/f4.jpg" width="100%" class="small-img"></div>
+            </div>
+        </div>
+        <div class="single-pro-details">
+            <h6>Home / T-Shirts</h6>
+            <h4 id="product-name">Men's Fashion T-Shirt</h4>
+            <h2 id="product-price">$139.00</h2>
+            <select id="size-select">
+                <option>Select Size</option>
+                <option>XL</option>
+                <option>XXL</option>
+                <option>L</option>
+                <option>M</option>
+                <option>S</option>
+            </select>
+            <input type="number" value="1" id="quantity-input">
+            <button id="add-to-cart-btn" class="normal">Add To Cart</button>
+            <h4>Product Details</h4>
+            <span id="product-description">The Gildan Ultra Cotton T-shirt is made from a substantial 6.0 oz. per sq. yd. fabric constructed from 100% cotton...</span>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img src="logo.png" class="logo">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong> 562 Wellington Road, Street 32, San Francisco</p>
+            <p><strong>Phone:</strong> +91 8139213256</p>
+            <p><strong>Hours: </strong> 9:00 am - 9:00 pm, Mon-Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>Account</h4>
+            <a href="#" id="footer-signin">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Product descriptions mapping
+        const productDescriptions = {
+            "Cartoon Astronaut T-Shirt 1": "The Gildan Ultra Cotton T-shirt is made from a substantial 6.0 oz. per sq. yd. fabric constructed from 100% cotton. Perfect for casual wear with a fun astronaut design.",
+            "Cartoon Astronaut T-Shirt 2": "A lightweight and breathable T-shirt made from 100% organic cotton. Features a unique cartoon astronaut graphic, ideal for everyday comfort.",
+            "Cartoon Astronaut T-Shirt 3": "This premium T-shirt is crafted from a cotton-polyester blend, offering durability and softness. Show off your love for space with this stylish design.",
+            "Cartoon Astronaut T-Shirt 4": "Made from eco-friendly materials, this T-shirt combines comfort and style. The cartoon astronaut print adds a playful touch to your wardrobe."
+        };
+
+        // Read URL parameters and update product details
+        document.addEventListener('DOMContentLoaded', () => {
+            try {
+                const urlParams = new URLSearchParams(window.location.search);
+                const image = urlParams.get('image') || 'img/products/f1.jpg';
+                const name = urlParams.get('name') || "Men's Fashion T-Shirt";
+                const price = urlParams.get('price') || '139.00';
+
+                // Update the product details on the page
+                document.getElementById('MainImg').src = image;
+                document.getElementById('product-name').innerText = name;
+                document.getElementById('product-price').innerText = `$${parseFloat(price).toFixed(2)}`;
+                document.getElementById('product-description').innerText = productDescriptions[name] || "No description available.";
+
+                // Update small images (for simplicity, use the same image for all)
+                const smallImages = document.querySelectorAll('.small-img');
+                smallImages.forEach(img => {
+                    img.src = image;
+                });
+
+                // Update the small images click event to change the main image
+                smallImages.forEach(img => {
+                    img.addEventListener('click', () => {
+                        document.getElementById('MainImg').src = img.src;
+                    });
+                });
+
+                // Test for SES restrictions
+                console.log('Testing eval:', typeof eval); // Should be undefined if restricted
+                console.log('Testing Function:', typeof Function); // Should be undefined if restricted
+                console.log('Testing setTimeout:', typeof setTimeout); // Might be restricted
+                console.log('Testing localStorage:', localStorage); // Should be accessible
+                console.log('Testing JSON.stringify:', JSON.stringify({ test: 1 })); // Should work
+            } catch (error) {
+                console.error('SES restriction detected:', error);
+            }
+        });
+    </script>
+</body>
+</html>
