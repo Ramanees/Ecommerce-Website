@@ -14,11 +14,13 @@ app.use(cors({
 const PORT = 3000;
 
 // MongoDB Connection
-mongoose.connect('mongodb://localhost:27017/ecommerce', {
+const mongoose = require('mongoose');
+
+mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://admin:pass123@cluster0.f8989go.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
-.then(() => console.log('Connected to MongoDB successfully'))
+.then(() => console.log('Connected to MongoDB Atlas'))
 .catch(err => console.error('MongoDB connection error:', err));
 
 // User Schema
